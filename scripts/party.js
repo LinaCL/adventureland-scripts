@@ -1,7 +1,7 @@
-const group = ["MistONE", "MistTWO"]
-const leader = group[0]
+var make_party = function (group) {
 
-var make_party = function () {
+    leader = group[0]
+    
     if (character.id === leader) {
         for (let name of group) {
             send_party_invite(name)
