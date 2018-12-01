@@ -1,6 +1,4 @@
 var make_party = function () {
-
-    let leader = group[0]
     
     if (character.id === leader) {
         for (let name of group) {
