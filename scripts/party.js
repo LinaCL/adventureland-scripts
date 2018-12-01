@@ -1,4 +1,4 @@
-var make_party = function (group) {
+var make_party = function () {
 
     let leader = group[0]
     
