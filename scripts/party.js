@@ -1,6 +1,6 @@
 var make_party = function (group) {
 
-    leader = group[0]
+    let leader = group[0]
     
     if (character.id === leader) {
         for (let name of group) {
@@ -16,14 +16,14 @@ var make_party = function (group) {
 
 function on_party_request(name) {
     game_log("Party request.")
-    if (group.indexOf(name) !== -1) {
+    if (group.includes(name)) {
         accept_party_request(name)
     }
 }
 
 function on_party_invite(name) {
     game_log("Party invite.")
-    if (group.indexOf(name) !== -1) {
+    if (group.includes(name)) {
         accept_party_invite(name);
     }
 }
